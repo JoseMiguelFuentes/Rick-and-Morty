@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  /*Configuración inicial de css*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: #0b3036;
+}
+
+.main__img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 10;
+}
+.main__bg {
+  width: 100%;
+  height: auto;
+
+  z-index: 10;
+}
+/***  location data   ***/
+#names {
+  position: absolute;
+  z-index: 11;
+  width: 40%;
+  height: auto;
+  left: 32vw;
+  top: 3vh;
+  transition: 0.2s;
+}
+#names:hover {
+  transform: translateY(-5px);
+  width: 20%;
+  top: 9vh;
+  left: 40vw;
+  box-shadow: inset 0 0 30px 1px #050404;
+  border-radius: 25%;
+  background-color: rgb(206, 41, 41);
+}
+.location {
+  background-color: #062226;
+  color: #fff;
+  width: 890px;
+  height: 18vw;
+  margin: 20px auto;
+  padding: 20px;
+}
+.Location__data {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  bottom: -27px;
+}
+/***  sizes applied   ***/
+.big--font {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.med--font {
+  font-size: 24px;
+  font-weight: 700;
+}
+.small--font {
+  font-size: 18px;
+  font-weight: 700;
+  color: #7e7e7e;
+}
+/***  character Data from locations   ***/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-bottom: 90px;
+  justify-content: center;
+}
+
+.character--info {
+  text-align: left;
+  margin-top: 3%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+
+.ResidentsItem {
+  border-radius: 5px;
+  height: max ( 100%);
+  width: 437px;
+  background-color: #062226;
+  border-radius: 5px;
+  color: #fff;
+  position: relative;
+  padding-bottom: 3%;
+}
+.individual {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+/***  search Id   ***/
+.search--button{
+  background-color: #062226;
+  width: 43%;
+  margin: 0 auto;
+  height: 6%;
+  margin-top: 20px;
+}
+.newId__input{
+  background-color: #0b303695;
+  border: rgb(107, 225, 29) 1px solid;
+  color: white;
+  padding: 15px 32px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  cursor: text;
+  width: 75%;
+  height: 100%;
+  font-size: 63%;
+}
+.newId__button{
+  
+  background-color: #0b3036;
+  border: gray 1px solid;
+  color: white;
+  padding: 3px 1px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  width: 24%;
+  font-size: 65%;
+  height: 100%;
+}
+
+
+/****  info  status   ****/
+.status {
+  width: 180px;
+  height: 42px;
+  position: absolute;
+  top: 35px;
+  left: 0px;
+  background-color: #062226;
+  border-radius: 0 13px 13px 0;
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 10px;
+}
+.circle {
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 900px){
+  .location {
+    width: 80vw;
+    height: 30vw;
+  }
+  .Location__data {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: -27px;
+    font-size: 16px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .character--info {
+    text-align: left;
+    margin-top: 3%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  
+  .ResidentsItem {
+    width: 200px;
+  }
+  .ResidentsItem h3{
+    font-size: 14px;
+  }
+  .ResidentsItem p{
+    font-size: 12px;
+  }
+  .circle{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+  .status {
+    width: 35%;
+  height: 20px;
+  font-size: 10px;
+  gap: 10px;
+  } 
+}
+@media screen and (max-width: 554px){
+  .location {
+    height: 44vw;
+  }
+  .ResidentsItem {
+    border-radius: 5px;
+    height: max ( 100%);
+    width: 150px;
+    background-color: #062226;
+    border-radius: 5px;
+    color: #fff;
+    position: relative;
+    padding-bottom: 3%;
+    font-size: smaller;
+  }
+
+  .circle{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+  .status {
+    width: 35%;
+    height: 20px;
+    font-size: 7px;
+    gap: 3px
+  }
+
+}
